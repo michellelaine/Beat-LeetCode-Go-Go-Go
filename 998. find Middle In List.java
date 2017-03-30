@@ -1,3 +1,4 @@
+/* 写的都是什么鬼
 public ListNode findMiddleInList(ListNode head) {
 	if(head == null) {
 		return null;
@@ -18,4 +19,19 @@ public ListNode findMiddleInList(ListNode head) {
 
 	return middle;
 
+}*/
+
+public ListNode findMiddleInList(ListNode head) {
+    if(head == null) {
+    	return null;
+	}
+
+	ListNode slow = head;
+	ListNode fast = head.next;
+
+	while(fast != null && fast.next != null) {
+		slow = slow.next;
+		fast = fast.next.next;
+	}
+	return slow;
 }
