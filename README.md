@@ -1,2 +1,2 @@
-# Beat-LeetCode-Go-Go-Go
+# Coding for fun
 MichelleYe - for the time I learned CS
